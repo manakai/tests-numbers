@@ -1,6 +1,7 @@
 #in
 #out
 0
+#inputnonint
 
 #in
 1
@@ -16,11 +17,19 @@
 12.4
 #out
 12
+#inputnonint
+
+#in
+12.6
+#out
+12
+#inputnonint
 
 #in
 12abc
 #out
 12
+#inputnonint
 
 #in
 123
@@ -41,6 +50,7 @@
 10000.012
 #out
 1万
+#inputnonint
 
 #in
 12345
@@ -126,3 +136,66 @@
 -01340
 #out escaped
 \u22121340
+
+#in
+-0
+#out
+0
+
+#in
+-1
+#out escaped
+\u22121
+
+#in
+-10000
+#out escaped
+\u22121万
+
+#in
+-
+#out
+0
+#inputnonint
+
+#in
+0 but true
+#out
+0
+#inputnonint
+
+#in
+NaN
+#out
+0
+#inputnonint
+
+#in
+Inf
+#out
+0
+#inputnonint
+
+#in
+-Inf
+#out
+0
+#inputnonint
+
+#in escaped
+\u2212210
+#out
+0
+#inputnonint
+
+#in escaped
+\u2212210億
+#out
+0
+#inputnonint
+
+#in escaped
+129億
+#out
+129
+#inputnonint
