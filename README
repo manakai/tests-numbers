@@ -1,0 +1,32 @@
+Number test data
+~~~~~~~~~~~~~~~~
+
+Implementation-independent number test data.
+
+* Files
+
+cjk/
+  Tests for the Numbers specification.
+  Spec: <https://manakai.github.io/spec-numbers/>
+
+* Test data format
+
+Different tests in this repository are written in different formats.
+
+Many tests adopt the HTCT test case description format, which is a
+generaliztion of the HTML parser's tree construction stage test
+suite's format, applicable to other protocols as well.  See
+<https://wiki.suikawiki.org/n/HTCT> for more information.
+
+* Other tests in different repositories
+
+<https://github.com/manakai/data-chars/blob/master/data/tests/cjk-numbers-tests.txt>
+  CJK number parsing tests.
+
+* Author
+
+Wakaba <wakaba@suikawiki.org>.
+
+* License
+
+Public Domain.
